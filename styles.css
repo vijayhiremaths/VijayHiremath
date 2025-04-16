@@ -18,7 +18,7 @@ body {
   text-align: center;
   font-size: 18px;
   margin-bottom: 5px;
-  color: #007BFF;
+  color: #3b73b5;
   font-weight: bold;
 }
 
@@ -27,7 +27,7 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   text-transform: uppercase;
-  border-bottom: 2px solid #007BFF;
+  border-bottom: 2px solid #3b73b5;
   padding-bottom: 10px;
 }
 
@@ -38,7 +38,7 @@ body {
 .section h3 {
   color: #333;
   margin-bottom: 10px;
-  border-left: 4px solid #007BFF;
+  border-left: 4px solid #3b73b5;
   padding-left: 10px;
 }
 
@@ -56,7 +56,7 @@ ul li {
 }
 
 .print-btn {
-  background-color: #007BFF;
+  background-color: #3b73b5;
   color: white;
   border: none;
   padding: 12px 20px;
@@ -72,4 +72,10 @@ ul li {
 
 .print-btn:hover {
   background-color: #0056b3;
+}
+
+.page-bottom-title{
+color: steelblue;
+  position: relative;
+  bottom: 100px;
 }
