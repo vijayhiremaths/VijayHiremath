@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Vijay Matrimony</title>
@@ -8,26 +9,52 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #fef6e4; /* Warm traditional background */
+      background-color: #fef6e4;
+      /* Warm traditional background */
       font-family: 'Tiro Kannada', serif;
       text-align: center;
     }
 
     .container {
-      padding: 40px 20px;
+      padding: 20px 10px;
+      max-width: 100%;
     }
 
-    .temple-image {
-      max-width: 220px;
-      height: auto;
-      margin: 10px;
-      border: 10px solid gold;
-      border-radius: 16px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
+    .temple-image-Mahanteshwara {
+      height: 250px;
+      margin:
+        10px;
+      border:
+        8px solid gold;
+      border-radius:
+        12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      transition:
+        transform 0.3s ease;
+      position: relative;
+      bottom: 65px;
+      width: 158px;
     }
 
-    .temple-image:hover {
+    .temple-image-basavanna {
+      max-width: 160px;
+      height: 250px;
+      margin:
+        10px;
+      border:
+        8px solid gold;
+      border-radius:
+        12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      transition:
+        transform 0.3s ease;
+      position: relative;
+      bottom: 65px;
+    }
+
+
+    .temple-image-Mahanteshwara:hover,
+    .temple-image-basavanna:hover {
       transform: scale(1.03);
     }
 
@@ -55,19 +82,94 @@
       font-size: 16px;
       border-top: 2px solid #d4af37;
     }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      60% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .visit-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #b30059;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      animation: bounceIn 1s ease;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+  bottom: 115px;
+    }
+
+    .visit-btn:hover {
+      background-color: #800040;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff99cc;
+    }
+
+    .image-container {
+      display: inline-block;
+      margin: 10px 20px;
+      text-align: center;
+    }
+
+    .image-caption {
+      margin-top: 10px;
+  font-size: 18px;
+  color: #4d2600;
+  font-weight: bold;
+  position: relative;
+  bottom: 80px;
+    }
+
+    .page-title {
+      font-size: 22px;
+  color: #800000;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #e6ccb2;
+  position: relative;
+  bottom: 30px;
+  right: 20px;
+    }
   </style>
 </head>
-<body>
-  <div class="container">
-    <img src="image/Basaveshwara.jpg" alt="Basavanna" class="temple-image">     
-    <img src="image/vijayamahanteswara.jpg" alt="Mahanteshwara" class="temple-image">
-    <br>
 
-    <button class="visit-btn" onclick="location.href='biodata.html'">Visit Vijay's Site</button>
+<body>
+
+  <div class="container">
+    <h2 class="page-title">|| ಓಂ ಶ್ರೀ ಗುರು ಬಸವಲಿಂಗಾಯ ನಮಃ || </h2>
+    <div class="image-container">
+      <img src="image/Basaveshwara.jpg" alt="Basavanna" class="temple-image-basavanna">
+      <p class="image-caption">ವಿಶ್ವಗುರು ಬಸವಣ್ಣ</p>
+    </div>
+
+    <div class="image-container">
+      <img src="image/vijayamahanteswara.jpg" alt="Mahanteshwara" class="temple-image-Mahanteshwara">
+      <p class="image-caption">ವಿಜಯಮಹಂತೇಶ್ವರ ಶಿವಯೋಗಿಗಳು</p>
+    </div>
+
+    <br>
+    <button class="visit-btn" onclick="location.href='biodata.html'">ಕೈಮುಗಿದು ಒಳಗೆ ಬನ್ನಿ</button>
   </div>
 
   <footer>
     © 2025 Vijay S Hiremath. All blessings by Shri Basavanna & Shri Mahanteshwara.
   </footer>
 </body>
+
 </html>
