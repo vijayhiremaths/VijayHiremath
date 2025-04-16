@@ -1,36 +1,52 @@
-04.16 12:21 AM
-/* Basic styling for the matrimony website */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdfaf6;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-    margin: 0;
+.temple {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #aa0000;
 }
 
-section.intro {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
+.title {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #444;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.section {
+  margin-bottom: 30px;
 }
 
+.section h3 {
+  font-size: 20px;
+  color: #007b5e;
+  border-bottom: 2px solid #007b5e;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 6px 0;
+}
