@@ -54,3 +54,22 @@ ul li {
 .kn {
   font-family: 'Noto Sans Kannada', 'Tunga', sans-serif;
 }
+
+.print-btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.print-btn:hover {
+  background-color: #0056b3;
+}
