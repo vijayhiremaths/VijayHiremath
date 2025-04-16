@@ -73,9 +73,3 @@ ul li {
 .print-btn:hover {
   background-color: #0056b3;
 }
-
-.page-bottom-title{
-color: steelblue;
-  position: relative;
-  bottom: 100px;
-}
