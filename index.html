@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Vijay's Matrimony</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 40px;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .images img {
+      width: 300px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .visit-btn {
+      background-color: #007BFF;
+      color: white;
+      font-size: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .visit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Vijay's Matrimony Profile</h1>
+
+  <div class="images">
+    <img src="image/basavanna.jpg" alt="Basavanna">
+    <img src="image/mahanteshwara.jpg" alt="Mahanteshwara">
+  </div>
+
+  <button class="visit-btn" onclick="goToBiodata()">Visit Vijay's Site</button>
+
+  <script>
+    function goToBiodata() {
+      window.location.href = "biodata.html";
+    }
+  </script>
+
+</body>
+</html>
