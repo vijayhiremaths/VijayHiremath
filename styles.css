@@ -50,3 +50,12 @@ ul {
 ul li {
   margin: 6px 0;
 }
+
+.temple {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #007BFF; /* Blue */
+  font-weight: bold;
+}
+
