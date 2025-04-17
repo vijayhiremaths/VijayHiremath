@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>🕉️ Vijay Hiremath</title>
@@ -51,8 +50,6 @@
       position: relative;
       bottom: 65px;
     }
-
-
     .temple-image-Mahanteshwara:hover,
     .temple-image-basavanna:hover {
       transform: scale(1.03);
@@ -73,7 +70,6 @@
     .visit-btn:hover {
       background-color: #800040;
     }
-
     footer {
       margin-top: 40px;
       padding: 20px 0;
@@ -82,13 +78,11 @@
       font-size: 16px;
       border-top: 2px solid #d4af37;
     }
-
     @keyframes bounceIn {
       0% {
         transform: scale(0.9);
         opacity: 0;
       }
-
       60% {
         transform: scale(1.05);
         opacity: 1;
@@ -98,7 +92,6 @@
         transform: scale(1);
       }
     }
-
     .visit-btn {
       margin-top: 20px;
       padding: 10px 20px;
@@ -112,21 +105,18 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       position: relative;
-  bottom: 115px;
+  bottom: 155px;
     }
-
     .visit-btn:hover {
       background-color: #800040;
       transform: scale(1.05);
       box-shadow: 0 0 20px #ff99cc;
     }
-
     .image-container {
       display: inline-block;
       margin: 10px 20px;
       text-align: center;
     }
-
     .image-caption {
       margin-top: 10px;
   font-size: 18px;
@@ -135,7 +125,6 @@
   position: relative;
   bottom: 80px;
     }
-
     .page-title {
       font-size: 22px;
   color: #800000;
@@ -151,31 +140,45 @@ color: steelblue;
   position: relative;
   bottom: 100px;
 }
+.falling-flower {
+  position: fixed;
+  top: -30px;
+  font-size: 24px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: fall 8s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
   </style>
 </head>
-
 <body>
-
   <div class="container">
     <h2 class="page-title">|| ಓಂ ಶ್ರೀ ಗುರು ಬಸವಲಿಂಗಾಯ ನಮಃ || </h2>
     <div class="image-container">
       <img src="image/Basaveshwara.jpg" alt="Basavanna" class="temple-image-basavanna">
       <p class="image-caption">ವಿಶ್ವಗುರು ಬಸವಣ್ಣ</p>
     </div>
-
     <div class="image-container">
       <img src="image/vijayamahanteswara.jpg" alt="Mahanteshwara" class="temple-image-Mahanteshwara">
       <p class="image-caption">ವಿಜಯಮಹಂತೇಶ್ವರ ಶಿವಯೋಗಿಗಳು</p>
     </div>
-
     <br>
     <h2 class="page-bottom-title">ಕೈಮುಗಿದು ಒಳಗೆ ಬನ್ನಿ</h2>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: -60px;">
+      <img src="image/dog.png"  style="height: 131px; position: relative; bottom: 35px; left: 90px;" />
+      <img src="image/cat.png" style="height: 177px; position: absolute; top: 448px; left: 490px; " />
+    </div>
     <button class="visit-btn" onclick="location.href='biodata.html'">Bio-data</button>
   </div>
-
   <footer>
     © 2025 Vijay S Hiremath. ಗುರು ಹಿರಿಯರ ಆಶೀರ್ವಾದ.
   </footer>
+  <script src="flowers.js"></script>
 </body>
-
 </html>
