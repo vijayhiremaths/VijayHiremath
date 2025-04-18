@@ -125,5 +125,30 @@
 </li>
 
     <button onclick="window.print()" class="print-btn">Download as PDF</button>
+    <audio id="bgMusic" autoplay loop muted>
+      <source src="../musicMM.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>  
+    
+    <button onclick="toggleMusic()" id="musicBtn" style="position:fixed; top:15px; right:15px; z-index:999; background-color:#b30059; color:white; border:none; border-radius:50%; width:40px; height:40px; font-size:20px; cursor:pointer;">🔇</button>
+    
+    <script>
+      const bgMusic = document.getElementById('bgMusic');
+      const musicBtn = document.getElementById('musicBtn');
+      let isPlaying = false;
+    
+      function toggleMusic() {
+        if (isPlaying) {
+          bgMusic.pause();
+          musicBtn.textContent = '🔇';
+        } else {
+          bgMusic.muted = false; // Unmute when user clicks
+          bgMusic.play();
+          musicBtn.textContent = '🔊';
+        }
+        isPlaying = !isPlaying;
+      }
+    </script>
+    
 </body>
 </html>
