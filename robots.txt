@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vijayhiremath.site/sitemap.xml
